@@ -1,9 +1,10 @@
 @use "../abstracts/mixins";
+@use "../abstracts/variables";
 
 .tile {
     display: inline-block;
     border: 1px solid #ff0000;
-    // @include mixins.animation-slide;
+    @include mixins.animation-slide(0, variables.$width-banner);
     animation: {
         duration: 5s;
         timing-function: linear;

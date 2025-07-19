@@ -1,10 +1,10 @@
-@mixin animation-slide() {
+@mixin animation-slide($beginX, $endX) {
     @keyframes slide {
-        0% {
-            transform: translateX(0);
+        from {
+            transform: translateX($beginX);
         }
-        100% {
-            transform: translateX(100%);
+        to {
+            transform: translateX($endX);
         }
     }
 }
