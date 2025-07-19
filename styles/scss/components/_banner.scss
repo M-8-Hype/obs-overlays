@@ -1,8 +1,12 @@
 @use "../abstracts/variables";
 
 .banner {
-    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: visible;
+    height: 50px;
     width: variables.$width-banner;
     background-color: #2196f3;
     border: 2px solid #000;
+    align-items: flex-start;
 }
