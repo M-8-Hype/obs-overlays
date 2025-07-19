@@ -81,29 +81,29 @@ p {
   display: inline-block;
   white-space: nowrap;
   border: 1px solid #ff0000;
-}
-.tile p {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-.track {
-  display: flex;
-  flex-wrap: nowrap;
-  position: relative;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-name: slide;
 }
 @keyframes slide {
+  25%, 40%, 60%, 75% {
+    transform: translateX(calc((200px + -100% - var(--gap, 0px)) / 2));
+  }
   from {
     transform: translateX(200px);
+  }
+  50% {
+    transform: translateX(calc((200px + -100% - var(--gap, 0px)) / 2)) scale(1.25);
   }
   to {
     transform: translateX(calc(-100% - var(--gap, 0px)));
   }
+}
+.tile p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .banner {

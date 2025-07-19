@@ -1,7 +1,14 @@
 @mixin animation-slide($beginX, $endX) {
+    $midX: calc(($beginX + $endX) / 2);
     @keyframes slide {
+        25%, 40%, 60%, 75% {
+            transform: translateX($midX);
+        }
         from {
             transform: translateX($beginX);
+        }
+        50% {
+            transform: translateX($midX) scale(1.25);
         }
         to {
             transform: translateX($endX);
