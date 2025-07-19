@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+thead {
+  font-size: 1.2rem;
+}
+
+code, kbd, pre, samp {
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Noto Mono, Oxygen Mono, Liberation Mono, monospace;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 1px solid WindowFrame;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  /* padding: 0.25em 0.375em; */
+}
+
+iframe,
+img,
+input,
+select,
+textarea {
+  height: auto;
+  max-width: 100%;
+}
+
+tbody th {
+  border: 1px solid;
+}
+
+p {
+  margin: 0;
+}
+
+.tile {
+  display: inline-block;
+  border: 1px solid #ff0000;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: slide;
+}
+.tile p {
+  display: inline-block;
+}
+
+.banner {
+  height: 200px;
+  width: 200px;
+  background-color: #2196f3;
+  border: 2px solid #000;
+}
+
+/*# sourceMappingURL=style.css.map */

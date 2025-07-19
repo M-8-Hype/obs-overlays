@@ -1,0 +1,16 @@
+@use "../abstracts/mixins";
+
+.tile {
+    display: inline-block;
+    border: 1px solid #ff0000;
+    // @include mixins.animation-slide;
+    animation: {
+        duration: 5s;
+        timing-function: linear;
+        iteration-count: infinite;
+        name: slide;
+    }
+    p {
+        display: inline-block;
+    }
+}
