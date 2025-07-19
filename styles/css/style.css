@@ -78,26 +78,28 @@ p {
 }
 
 .tile {
-  display: inline-block;
+  position: absolute;
+  left: 199px;
   white-space: nowrap;
   border: 1px solid #ff0000;
   animation-duration: 5s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-name: slide;
+  animation-fill-mode: forwards;
 }
 @keyframes slide {
   25%, 40%, 60%, 75% {
-    transform: translateX(calc((200px + -100% - var(--gap, 0px)) / 2));
+    transform: translateX(calc((0px + (-200px - 100%)) / 2));
   }
   from {
-    transform: translateX(200px);
+    transform: translateX(0px);
   }
   50% {
-    transform: translateX(calc((200px + -100% - var(--gap, 0px)) / 2)) scale(1.25);
+    transform: translateX(calc((0px + (-200px - 100%)) / 2)) scale(1.25);
   }
   to {
-    transform: translateX(calc(-100% - var(--gap, 0px)));
+    transform: translateX(calc(-200px - 100%));
   }
 }
 .tile p {
@@ -107,15 +109,17 @@ p {
 }
 
 .banner {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: nowrap;
   overflow: visible;
   height: 50px;
   width: 200px;
   background-color: #2196f3;
-  border: 2px solid #000;
+  border: 1px solid #000;
   align-items: flex-start;
   position: relative;
+  left: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
