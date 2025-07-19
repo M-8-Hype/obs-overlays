@@ -5,16 +5,22 @@
     display: inline-block;
     white-space: nowrap;
     border: 1px solid #ff0000;
-    @include mixins.animation-slide(variables.$width-banner, -100%);
+    p {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.track {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    @include mixins.animation-slide(variables.$width-banner, calc(-100% - var(--gap, 0px)));
     animation: {
         duration: 5s;
         timing-function: linear;
         iteration-count: infinite;
         name: slide;
-    }
-    p {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
     }
 }
