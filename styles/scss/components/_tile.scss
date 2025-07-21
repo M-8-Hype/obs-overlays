@@ -1,5 +1,6 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
+@use "../themes/main";
 
 .tile {
     position: absolute;
@@ -7,7 +8,7 @@
     top: calc(50%);
     transform: translateY(-50%);
     white-space: nowrap;
-    border: 0px solid #ff0000;
+    border: 0px solid main.$primary-color; // Leftover for testing purposes. 
     @include mixins.animation-slide(0px, calc(-#{variables.$width-banner} - 100%));
     animation: {
         duration: 5s;

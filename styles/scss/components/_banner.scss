@@ -2,15 +2,14 @@
 @use "../themes/main";
 
 .banner {
-    box-sizing: border-box;
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
+    align-items: flex-start;
     overflow: hidden;
     height: variables.$height-banner;
     width: variables.$width-banner;
     background-color: main.$secondary-color;
     border: variables.$border-banner solid main.$tertiary-color;
-    align-items: flex-start;
-    position: relative;
     border-radius: variables.$border-radius;
 }

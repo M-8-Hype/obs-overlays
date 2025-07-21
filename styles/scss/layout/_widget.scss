@@ -5,10 +5,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: fit-content;
+    justify-content: space-between;
+    width: variables.$width-widget;
     background-color: main.$primary-color;
     border-radius: variables.$border-radius;
     & > * {
+        font-size: variables.$font-size;
         margin: {
             top: variables.$margin-items;
             right: variables.$margin-items;
