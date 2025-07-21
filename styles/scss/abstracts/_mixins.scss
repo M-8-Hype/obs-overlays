@@ -2,16 +2,25 @@
     $midX: calc(($beginX + $endX) / 2);
     @keyframes slide {
         25%, 40%, 60%, 75% {
-            transform: translateX($midX);
+            transform: 
+                translateX($midX)
+                translateY(-50%);
         }
         from {
-            transform: translateX($beginX);
+            transform: 
+                translateX($beginX)
+                translateY(-50%);
         }
         50% {
-            transform: translateX($midX) scale(1.25);
+            transform: 
+                translateX($midX)
+                translateY(-50%) 
+                scale(1.25);
         }
         to {
-            transform: translateX($endX);
+            transform: 
+                translateX($endX)
+                translateY(-50%);
         }
     }
 }

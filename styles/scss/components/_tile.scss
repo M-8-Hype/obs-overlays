@@ -4,6 +4,8 @@
 .tile {
     position: absolute;
     left: variables.$width-banner - variables.$border-banner;
+    top: calc(50%);
+    transform: translateY(-50%);
     white-space: nowrap;
     border: 1px solid #ff0000;
     @include mixins.animation-slide(0px, calc(-#{variables.$width-banner} - 100%));
@@ -13,7 +15,6 @@
         iteration-count: 1;
         play-state: paused;
         name: slide;
-        fill-mode: forwards
     }
     p {
         display: inline-block;
