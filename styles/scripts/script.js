@@ -1,4 +1,5 @@
-const TILE_DURATION = 5000;
+const TILE_DURATION = 7500;
+document.documentElement.style.setProperty('--tile-duration', `${TILE_DURATION / 1000}s`);
 const tiles = document.querySelectorAll('.tile');
 const numberTiles = tiles.length;
 const cycleDuration = TILE_DURATION * numberTiles;

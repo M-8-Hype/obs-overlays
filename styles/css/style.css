@@ -111,7 +111,7 @@ p {
   transform: translateY(-50%);
   white-space: nowrap;
   border: 0px solid #00f593;
-  animation-duration: 5s;
+  animation-duration: var(--tile-duration, 5s);
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-play-state: paused;

@@ -11,7 +11,7 @@
     border: 0px solid main.$primary-color; // Leftover for testing purposes. 
     @include mixins.animation-slide(0px, calc(-#{variables.$width-banner} - 100%));
     animation: {
-        duration: 5s;
+        duration: var(--tile-duration, 5s); // Change duration in the TILE_DURATION constant in script.js.
         timing-function: linear;
         iteration-count: 1;
         play-state: paused;
