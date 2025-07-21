@@ -1,0 +1,21 @@
+@use "../abstracts/variables";
+@use "../themes/main";
+
+.widget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    background-color: main.$primary-color;
+    border-radius: variables.$border-radius;
+    & > * {
+        margin: {
+            top: variables.$margin-items;
+            right: variables.$margin-items;
+            bottom: variables.$margin-items;
+        }
+        &:first-child {
+            margin-left: variables.$margin-items;
+        }
+    }
+}

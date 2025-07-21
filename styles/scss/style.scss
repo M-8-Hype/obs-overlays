@@ -1,8 +1,14 @@
 @use "abstracts/mixins";
 @use "abstracts/variables";
 
+@use "base/fonts";
 @use "base/foundation";
 @use "base/general";
 
-@use "components/tile";
 @use "components/banner";
+@use "components/heading";
+@use "components/tile";
+
+@use "layout/widget";
+
+@use "themes/main";

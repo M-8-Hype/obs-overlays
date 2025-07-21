@@ -1,15 +1,16 @@
 @use "../abstracts/variables";
+@use "../themes/main";
 
 .banner {
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
-    overflow: visible;
-    height: 30px;
+    overflow: hidden;
+    height: variables.$height-banner;
     width: variables.$width-banner;
-    background-color: #2196f3;
-    border: variables.$border-banner solid #000;
+    background-color: main.$secondary-color;
+    border: variables.$border-banner solid main.$tertiary-color;
     align-items: flex-start;
     position: relative;
-    left: 200px;
+    border-radius: variables.$border-radius;
 }

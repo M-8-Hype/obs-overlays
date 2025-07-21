@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+:root {
+  font-family: "Inter";
+}
+
 *,
 *::after,
 *::before {
@@ -77,13 +82,36 @@ p {
   margin: 0;
 }
 
+.banner {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  height: 22px;
+  width: 100px;
+  background-color: #edf500;
+  border: 1px solid #000000;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 3px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  background-color: #00f593;
+}
+.heading > p {
+  font-weight: 700;
+}
+
 .tile {
   position: absolute;
-  left: 199px;
+  left: 99px;
   top: 50%;
   transform: translateY(-50%);
   white-space: nowrap;
-  border: 1px solid #ff0000;
+  border: 0px solid #ff0000;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
@@ -92,16 +120,16 @@ p {
 }
 @keyframes slide {
   25%, 40%, 60%, 75% {
-    transform: translateX(calc((0px + (-200px - 100%)) / 2)) translateY(-50%);
+    transform: translateX(calc((0px + (-100px - 100%)) / 2)) translateY(-50%);
   }
   from {
     transform: translateX(0px) translateY(-50%);
   }
   50% {
-    transform: translateX(calc((0px + (-200px - 100%)) / 2)) translateY(-50%) scale(1.25);
+    transform: translateX(calc((0px + (-100px - 100%)) / 2)) translateY(-50%) scale(1.25);
   }
   to {
-    transform: translateX(calc(-200px - 100%)) translateY(-50%);
+    transform: translateX(calc(-100px - 100%)) translateY(-50%);
   }
 }
 .tile p {
@@ -110,18 +138,21 @@ p {
   padding: 0;
 }
 
-.banner {
-  box-sizing: border-box;
+.widget {
   display: flex;
-  flex-wrap: nowrap;
-  overflow: visible;
-  height: 30px;
-  width: 200px;
-  background-color: #2196f3;
-  border: 1px solid #000;
-  align-items: flex-start;
-  position: relative;
-  left: 200px;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  background-color: #00f593;
+  border-radius: 3px;
+}
+.widget > * {
+  margin-top: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+.widget > *:first-child {
+  margin-left: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */

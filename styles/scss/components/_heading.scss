@@ -1,0 +1,11 @@
+@use "../abstracts/variables";
+@use "../themes/main";
+
+.heading {
+    display: flex;
+    align-items: center;
+    background-color: main.$primary-color;
+    & > p {
+        font-weight: 700;
+    }
+}
